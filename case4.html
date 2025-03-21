@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case 04</title>
+
+  <style>
+    div{
+      width: 0;
+      aspect-ratio: 1/1;
+      border: 1px solid red;
+      border-radius: 50%;
+
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+
+      animation-name: drop;
+      animation-timing-function: ease;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes drop {
+      from{
+        width: 0;
+        aspect-ratio: 1/1;
+        border: 1px solid red;
+      }
+      to{
+        width: 300px;
+        aspect-ratio: 1/1;
+        border: 1px solid red;
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div></div>
+
+</body>
+</html>
