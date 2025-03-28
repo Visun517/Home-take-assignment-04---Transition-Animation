@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case6</title>
+  <style>
+    body {
+      background-image: url("/images/sky.jpg");
+      position: relative;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      margin: 0;
+    }
+
+    * {
+      overflow: hidden;
+    }
+
+    .city {
+      position: absolute;
+      display: flex;
+      bottom: 297px;
+      left: 0;
+      animation: roadMove 6s ease-in-out infinite;
+    }
+
+    .city > img {
+      height: 40vh;
+    }
+
+    .road {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      animation: roadMove 6s ease-in-out infinite;
+    }
+
+    .road > img {
+      width: 680vh;
+      height: 35vh;
+    }
+
+    .car {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 135px;
+    }
+
+    .car img {
+      width: 652px;
+      height: auto;
+    }
+
+    .wheel1 {
+      position: absolute;
+      left: 116px;
+      bottom: 6px;
+      transform: translateX(-50%);
+    }
+
+    .wheel1 img {
+      width: 122px;
+      height: auto;
+      animation: rotate 3s ease-in-out infinite;
+    }
+
+    .wheel2 {
+      position: absolute;
+      left: 515px;
+      bottom: 6px;
+      transform: translateX(-50%);
+    }
+
+
+    .wheel2 img {
+      width: 122px;
+      height: auto;
+      animation: rotate 3s ease-in-out infinite;
+    }
+
+
+    @keyframes roadMove {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-67%);
+      }
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0);
+      }
+      100% {
+        transform: rotate(750deg);
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+<div class="city">
+  <img src="/images/city.png" alt="city">
+  <img src="/images/city.png" alt="city">
+  <img src="/images/city.png" alt="city">
+</div>
+
+<div class="road">
+  <img src="/images/road%20(1).jpg" alt="road">
+</div>
+
+<div class="car">
+  <img src="/images/car.png" alt="Car">
+  <div class="wheel1">
+    <img src="/images/wheel.png" alt="wheel">
+  </div>
+
+  <div class="wheel2">
+    <img src="/images/wheel.png" alt="wheel">
+  </div>
+
+</body>
+</html>
